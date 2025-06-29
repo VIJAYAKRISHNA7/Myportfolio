@@ -278,9 +278,10 @@ header .navbar ul li a:hover {
 
 .image img {
   width: 100%;
-  height: auto;
+  height: 60vh;
   object-fit: contain;
   max-width: 600px;
+  border-radius: 50%;
 }
 
 .image img:hover {
@@ -338,168 +339,99 @@ header .navbar ul li a:hover {
 /* hero media queries ends*/
 /* hero section end */
 /* about section starts */
-/* Basic reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Styling for the About Section */
 .about {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* Vertically center the content */
-  align-items: center;  /* Horizontally center the content */
-  background-color: #140404;
-  padding: 4rem 0;
-}
-
-.about .heading {
-
-  font-size: 50px;  /* Increased font size */
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.about .heading span {
-  color: rgb(255, 230, 0);
-  font-size: 50px;
-}
-
-.about .content {
-  text-align: center;  /* Center the text content */
-  max-width: 800px;  /* Limit the width of the content */
-  width: 80%;  /* Make the content take up 80% of the screen width */
-  margin-top: 3rem;
-}
-
-.about .content h3 {
-  font-size: 2.5rem;  /* Increased font size */
-  color: #fcfbfb;
-  margin-bottom: 1rem;
-}
-
-.about .tag {
-  font-size: 1.5rem;  /* Increased font size */
-  color: rgb(255, 230, 0);
-  margin-bottom: 1.5rem;
-
-}
-
-.about .content p {
-  font-size: 2rem;  /* Increased font size */
-  line-height: 1.8;
-  color: #ffffff;
-  margin-bottom: 2rem;
-}
-
-.about .box-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-.about .box {
-  width: 45%;
-  background-color: #1d1616;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.about .box p {
-  font-size: 1.5rem;
-  color: #e7e7e7;
-}
-
-.about .box span {
-  font-weight: bold;
-}
-
-.about .resumebtn {
-  text-align: center;
-}
-
-.about .resumebtn .btn {
-  font-weight: bold;
-  padding: 1rem 2.5rem;  /* Increased padding */
-  background-color: rgb(255, 230, 0);
-  color: #1e0303;
-  font-size: 1.5rem;  /* Increased font size */
-  text-decoration: none;
-  border-radius: 5px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
-}
-
-.about .resumebtn .btn i {
-  margin-left: 0.5rem;
-}
-
-.about .resumebtn .btn:hover {
-  background-color: rgb(50, 255, 67);
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .about .content h3 {
-    font-size: 2rem;
+    padding: 80px 20px;
+    background-color: #0049a2;
+    text-align: center;
   }
 
-  .about .tag {
-    font-size: 1.3rem;
-  }
-
-  .about .content p {
-    font-size: 1.1rem;
-  }
-
-  .about .box-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about .box {
-    width: 80%;
-    margin-bottom: 1rem;
-  }
-
-  .about .resumebtn .btn {
-    padding: 0.8rem 2rem;
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
   .about .heading {
     font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+  .about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
   }
 
-  .about .content h3 {
-    font-size: 1.8rem;
+  .about-img {
+    flex: 1 1 300px;
+    text-align: center;
   }
 
-  .about .tag {
-    font-size: 1.2rem;
+  .about-img img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
 
-  .about .content p {
-    font-size: 1rem;
+  .about-text {
+    flex: 1 1 500px;
   }
 
-  .about .box {
-    width: 90%;
+  .about-text h3 {
+    font-size: 2.7rem;
+    color: #ffffff;
+    margin-bottom: 10px;
   }
-  .about .resumebtn .btn {
-    padding: 0.6rem 1.5rem;
-    font-size: 1rem;
+
+  .about-text .role {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
   }
-}
+
+  .about-text p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+    line-height: 1.6;
+  }
+
+  .contact-info p {
+    font-size: 1.5rem;
+    margin: 8px 0;
+    color: #ffffff;
+  }
+
+  .btn-about {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 22px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-about:hover {
+    background-color: #0056b3;
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .about-text {
+      text-align: center;
+    }
+  }
 
 /* about media queries ends*/
 /* about section ends */
